@@ -1,0 +1,470 @@
+body{
+  margin: 0;
+  font-family: sans-serif;
+}
+
+nav{
+  width: 100%;
+  height: 100px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background: #f953c6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #b91d73, #f953c6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #b91d73, #f953c6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+}
+
+
+
+.menu_header__opciones{
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  top: 10px;
+  color: white;
+
+}
+
+.menu_header__opciones li{
+  list-style: none;
+  padding: 10px;
+
+}.menu_header__opciones li a{
+  color: white;
+  text-decoration: none;
+}
+.menu_footer__opciones li a{
+  color: white;
+  text-decoration: none;
+}
+
+.logo_header{
+  position: relative;
+  top: 10px;
+}
+
+.breadgrump{
+  width: 100%;
+  height: 350px;
+  background-image: url("http://localhost/maxima_belleza/images/breadgrump.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-position-y:-250px;
+  position: relative;
+  top: -21px;
+
+}
+
+.breadgrump::before{
+  content: "";
+  width: 100%;
+  height: 350px;
+  opacity: .5;
+  background-color: black;
+  position: absolute;
+}
+
+.breadgrump h1{
+  color: white;
+  z-index: 5;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  top:120px;
+  text-align:center;
+
+}
+
+.menu_header__responsive{
+  display: none;
+}
+
+.content_formulario{
+  width: 50%;
+  height: 150px;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  background: transparent;
+  position: relative;
+  border-radius: 3px;
+  margin-bottom: 100px;
+}
+
+.formulario_creacion{
+  width: 100%;
+  position: relative;
+  background-color: white;
+  height: 150px;
+  transition: all 1s;
+  box-shadow: 0px 0px 5px 0px;
+  border-radius: 3px;
+
+
+}
+
+.formulario_creacion::before{
+  content: "";
+  z-index: -1;
+  width: 100%;
+  position: absolute;
+  height: 150px;
+  background: #f953c6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #b91d73, #f953c6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #b91d73, #f953c6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+border-radius: 3px;
+
+
+
+}
+
+.formulario_creacion:hover{
+  background: transparent;
+  color: white;
+
+}
+
+.boton_creacion_categorias{
+  padding: 10px;
+  color: white;
+  width: 90px;
+  border-radius: 4px;
+  background: #f953c6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #b91d73, #f953c6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #b91d73, #f953c6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+}
+
+
+footer{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 250px;
+  width: 100%;
+  background: #f953c6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #b91d73, #f953c6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #b91d73, #f953c6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.menu_footer__opciones li{
+  list-style: none;
+  color:white;
+  padding: 10px;
+
+}
+
+
+@media (min-width:768px) and (max-width:1024px){
+  .breadgrump{
+    background-position-y:-120px;
+
+  }
+
+}
+
+@media (min-width:480px) and (max-width:767px){
+
+  .logo_header img{
+    position: relative;
+    top: 20px;
+    height: 42px;
+    z-index: 10;
+  }
+
+
+
+  .menu_header__responsive{
+    display: flex;
+    text-align: center;
+    justify-content: flex-end;
+
+  }
+
+
+  .menu_header__responsive p {
+    position: relative;
+    top: 24px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .menu_header__opciones{
+    display: block;
+  }
+
+  .menu_header__opciones_li{
+    display: none;
+  }
+
+  .flecha_responsive{
+    height: 20px;
+    position: relative;
+    top:25px;
+    padding: 15px;
+  }
+
+  .menu_header__opciones .desactive{
+    display: none;
+  }
+
+  .menu_header__opciones{
+    display: block;
+    position: absolute;
+    background-color: red;
+    width: 100%;
+    top: 80px;
+
+    right: 0px;
+    z-index: 6;
+  }
+
+  .menu_header__opciones_li{
+    display: block;
+  }
+  .menu_header__opciones_li{
+    display: none;
+    text-align: center;
+    background: #f953c6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #b91d73, #f953c6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #b91d73, #f953c6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  }
+
+  .menu_header__opciones_li.desactive{
+    display: none;
+  }
+
+  .menu_header__opciones_li.active{
+    display: block;
+
+  }
+
+  .breadgrump{
+    background-position-y:-50px;
+  }
+
+
+
+}
+
+  @media(min-width:768px) and (max-width:1024px){
+
+    .breadgrump{
+      background-position-y:-120px;
+
+    }
+
+}
+
+
+@media (min-width:480px) and (max-width:767px){
+
+  .logo_header img{
+    position: relative;
+    top: 20px;
+    height: 42px;
+    z-index: 10;
+  }
+
+
+
+  .menu_header__responsive{
+    display: flex;
+    text-align: center;
+    justify-content: flex-end;
+
+  }
+
+
+  .menu_header__responsive p {
+    position: relative;
+    top: 24px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .menu_header__opciones{
+    display: block;
+  }
+
+  .menu_header__opciones_li{
+    display: none;
+  }
+
+  .flecha_responsive{
+    height: 20px;
+    position: relative;
+    top:25px;
+    padding: 15px;
+  }
+
+  .menu_header__opciones .desactive{
+    display: none;
+  }
+
+  .menu_header__opciones{
+    display: block;
+    position: absolute;
+    background-color: red;
+    width: 100%;
+    top: 80px;
+
+    right: 0px;
+    z-index: 6;
+  }
+
+  .menu_header__opciones_li{
+    display: block;
+  }
+  .menu_header__opciones_li{
+    display: none;
+    text-align: center;
+    background: #f953c6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #b91d73, #f953c6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #b91d73, #f953c6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  }
+
+  .menu_header__opciones_li.desactive{
+    display: none;
+  }
+
+  .menu_header__opciones_li.active{
+    display: block;
+
+  }
+
+  .breadgrump{
+    background-position-y:-50px;
+  }
+
+  .flecha_responsive{
+    transition: all 1s;
+
+  }
+
+  .flecha_responsive.active{
+    transform: rotateZ(90deg);
+
+
+  }
+
+  .flecha_responsive.desactive{
+    transform: rotateZ(0deg);
+
+  }
+
+  .breadgrump{
+    background-position-y:-50px;
+  }
+
+  footer{
+    grid-template-columns: 50% 50%;
+  }
+
+
+
+}
+
+@media (min-width:320px) and (max-width:479px){
+
+  .logo_header img{
+    position: relative;
+    top: 20px;
+    height: 42px;
+    z-index: 10;
+  }
+
+
+
+  .menu_header__responsive{
+    display: flex;
+    text-align: center;
+    justify-content: flex-end;
+
+  }
+
+
+  .menu_header__responsive p {
+    position: relative;
+    top: 24px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .menu_header__opciones{
+    display: block;
+  }
+
+
+  .flecha_responsive{
+    height: 20px;
+    position: relative;
+    top:25px;
+    padding: 15px;
+  }
+
+  .menu_header__opciones_li{
+    display: none;
+    text-align: center;
+    background: #f953c6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #b91d73, #f953c6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #b91d73, #f953c6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  }
+
+  .menu_header__opciones_li.desactive{
+    display: none;
+  }
+
+  .menu_header__opciones_li.active{
+    display: block;
+
+  }
+
+  .breadgrump{
+    background-position-y:-50px;
+  }
+
+  .flecha_responsive{
+    transition: all 1s;
+
+  }
+
+  .flecha_responsive.active{
+    transform: rotateZ(90deg);
+
+
+  }
+
+  .flecha_responsive.desactive{
+    transform: rotateZ(0deg);
+
+  }
+
+  .menu_header__opciones{
+    display: block;
+    position: absolute;
+    background-color: red;
+    width: 100%;
+    top: 80px;
+
+    right: 0px;
+    z-index: 10;
+  }
+
+
+
+
+  footer{
+    grid-template-columns: 100%;
+  }
+
+
+}

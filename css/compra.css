@@ -1,0 +1,504 @@
+body{
+  margin: 0;
+  font-family: sans-serif;
+}
+
+nav{
+  width: 100%;
+  height: 100px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background: #f953c6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #b91d73, #f953c6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #b91d73, #f953c6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+}
+
+
+
+.menu_header__opciones{
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  top: 10px;
+  color: white;
+
+}
+
+.menu_header__opciones li a{
+  color: white;
+  text-decoration: none;
+}
+.menu_footer__opciones li a{
+  color: white;
+  text-decoration: none;
+}
+
+.menu_header__opciones li{
+  list-style: none;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+
+}
+.menu_header__opciones a{
+  color: white;
+  text-decoration: none;
+}
+
+.logo_header{
+  position: relative;
+  top: 10px;
+}
+
+.breadgrump{
+  width: 100%;
+  height: 350px;
+  background-image: url("http://localhost/maxima_belleza/images/breadgrump.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-position-y:-250px;
+  position: relative;
+  top: -21px;
+
+}
+
+.breadgrump::before{
+  content: "";
+  width: 100%;
+  height: 350px;
+  opacity: .5;
+  background-color: black;
+  position: absolute;
+}
+
+.breadgrump h1{
+  color: white;
+  z-index: 5;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  top:120px;
+  text-align:center;
+
+}
+
+.menu_header__responsive{
+  display: none;
+}
+
+.eleccion_ciudad{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 300px 300px 300px;
+  margin-bottom: 100px;
+  grid-row-gap: 30px;
+}
+
+.ciudad_1{
+  background:transparent;
+
+}
+
+.eleccion_1{
+  background: white;
+  width: 50%;
+  box-shadow: 0px 0px 5px 0px;
+  position: relative;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  transition: all 1s;
+  display: flex;
+  justify-content: center;
+}
+
+.eleccion_1:hover{
+  background: transparent;
+}
+.eleccion_1::before{
+  content: "";
+  position: absolute;
+  background: #f953c6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #b91d73, #f953c6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #b91d73, #f953c6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+width: 100%;
+height: 300px;
+border-radius: 50%;
+z-index: -1;
+
+}
+
+.eleccion_2{
+  width: 50%;
+  position: relative;
+  height: 100%;
+  background-color: black;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+
+}
+
+.eleccion_3{
+  width: 50%;
+  position: relative;
+  height: 100%;
+  background-color: black;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+}
+
+.eleccion_4{
+  width: 50%;
+  position: relative;
+  height: 100%;
+  background-color: black;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+}
+.ciudad_2{
+  background:transparent;
+}
+.ciudad_3{
+  background:transparent;
+}
+.ciudad_4{
+  background:transparent;
+}
+
+
+.valor_informacion{
+  position: relative;
+  top: 90px;
+  margin-left: auto;
+  margin-right: auto;
+  top: 136px;
+  color:black;
+  text-decoration: none;
+  transition: all 1s;
+  left:0px !important;
+
+}
+
+.valor_informacion.active{
+  color: white;
+}
+.valor_informacion.desactive{
+  color: black;
+
+}
+
+
+
+
+footer{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 250px;
+  width: 100%;
+  background: #f953c6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #b91d73, #f953c6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #b91d73, #f953c6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.menu_footer__opciones li{
+  list-style: none;
+  color:white;
+  padding: 10px;
+
+}
+
+.menu_footer__opciones a{
+  color: white;
+  text-decoration: none;
+}
+
+@media (min-width:768px) and (max-width:1024px){
+  .breadgrump{
+    background-position-y:-120px;
+
+  }
+
+}
+
+
+
+@media (min-width:480px) and (max-width:767px){
+
+  .logo_header img{
+    position: relative;
+    top: 20px;
+    height: 42px;
+    z-index: 10;
+  }
+
+
+  .valor_informacion{
+
+    top:40%;
+
+  }
+
+  .eleccion_1::before{
+    height: 160px;
+
+  }
+
+  .eleccion_ciudad{
+    grid-template-columns: 100%;
+    grid-template-rows:20% 20% 20% 20%;
+    height: 800px;
+
+  }
+
+  .menu_header__responsive{
+    display: flex;
+    text-align: center;
+    justify-content: flex-end;
+
+  }
+
+
+  .menu_header__responsive p {
+    position: relative;
+    top: 24px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .menu_header__opciones{
+    display: block;
+  }
+
+  .menu_header__opciones_li{
+    display: none;
+  }
+
+  .flecha_responsive{
+    height: 20px;
+    position: relative;
+    top:25px;
+    padding: 15px;
+  }
+
+  .menu_header__opciones .desactive{
+    display: none;
+  }
+
+  .menu_header__opciones{
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 80px;
+
+    right: 0px;
+    z-index: 6;
+  }
+
+  .menu_header__opciones_li{
+    display: block;
+  }
+  .menu_header__opciones_li{
+    display: none;
+    text-align: center;
+    background: #f953c6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #b91d73, #f953c6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #b91d73, #f953c6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  }
+
+  .menu_header__opciones_li.desactive{
+    display: none;
+  }
+
+  .menu_header__opciones_li.active{
+    display: block;
+    animation: active .5s forwards;
+
+
+  }
+
+  .breadgrump{
+    background-position-y:-50px;
+  }
+
+  .flecha_responsive{
+    transition: all 1s;
+
+  }
+
+  .flecha_responsive.active{
+    transform: rotateZ(90deg);
+
+
+  }
+
+  .flecha_responsive.desactive{
+    transform: rotateZ(0deg);
+
+  }
+
+  .breadgrump{
+    background-position-y:-50px;
+  }
+
+
+footer{
+  grid-template-columns: 50% 50%;
+}
+
+
+
+}
+
+
+
+@media (min-width:320px) and (max-width:479px) {
+
+.valor_informacion{
+
+  top:40%;
+
+}
+
+.eleccion_1::before{
+  height: 160px;
+
+}
+
+.eleccion_ciudad{
+  grid-template-columns: 100%;
+  grid-template-rows:20% 20% 20% 20%;
+  height: 800px;
+
+}
+
+  .logo_header img{
+    position: relative;
+    top: 20px;
+    height: 42px;
+    z-index: 10;
+  }
+
+
+
+  .menu_header__responsive{
+    display: flex;
+    text-align: center;
+    justify-content: flex-end;
+
+  }
+
+
+  .menu_header__responsive p {
+    position: relative;
+    top: 24px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .menu_header__opciones{
+    display: block;
+  }
+
+
+  .flecha_responsive{
+    height: 20px;
+    position: relative;
+    top:25px;
+    padding: 15px;
+  }
+
+  .menu_header__opciones_li{
+    display: none;
+    text-align: center;
+    background: #f953c6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #b91d73, #f953c6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #b91d73, #f953c6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  }
+
+  .menu_header__opciones_li.desactive{
+    display: none;
+  }
+
+  .menu_header__opciones_li.active{
+    display: block;
+    animation: active .5s forwards;
+
+
+  }
+
+  .breadgrump{
+    background-position-y:-50px;
+  }
+
+  .flecha_responsive{
+    transition: all 1s;
+
+  }
+
+  .flecha_responsive.active{
+    transform: rotateZ(90deg);
+
+
+  }
+
+  .flecha_responsive.desactive{
+    transform: rotateZ(0deg);
+
+  }
+
+  .menu_header__opciones{
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 80px;
+
+    right: 0px;
+    z-index: 10;
+  }
+
+
+
+
+  footer{
+    grid-template-columns: 100%;
+  }
+
+}
+
+
+
+@keyframes active {
+  from{
+  transform:  translateY(10px) scaleY(0);
+
+    }
+
+  to{
+    transform: translateY(10) scale(1);
+    }
+
+
+
+
+}
+@keyframes desactive {
+from {
+transform: translateY(-10px) scaleY(.5);
+}
+
+to{
+transform: translateY(0) scale(0);
+}
+
+}
